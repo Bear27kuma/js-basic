@@ -17,6 +17,7 @@ body {
 
 input {
     display: inline-block;
+    width: 25rem;
     border-radius: 1.6rem;
     border: none;
     padding: 0.6rem 1.6rem;
