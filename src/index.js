@@ -9,8 +9,24 @@ const onClickAdd = () => {
   const p = document.createElement('p');
   p.innerText = input.value;
 
+  // 完了ボタンを生成する
+  const completeButton = document.createElement('button');
+  completeButton.innerText = '完了';
+  completeButton.addEventListener('click', () => {
+    alert('完了');
+  });
+
+  // 削除ボタンを生成する
+  const deleteButton = document.createElement('button');
+  deleteButton.innerText = '削除';
+  deleteButton.addEventListener('click', () => {
+    alert('削除');
+  });
+
   // liタグの子要素に各要素を設定する
   li.appendChild(p);
+  li.appendChild(completeButton);
+  li.appendChild(deleteButton);
 
   // 未完了のリストに追加する
   document.getElementById('incomplete-list').appendChild(li);
